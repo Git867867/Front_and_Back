@@ -30,4 +30,4 @@
 ## Структура проекта:
 - `index.html` - основной HTML-файл
 - `scss/styles.scss` - исходный SASS-файл
-- `css/styles.css` - скомпилированный CSS (создастся автоматически)
+- `css/styles.css` - скомпилированный CSS
