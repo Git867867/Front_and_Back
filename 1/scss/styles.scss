@@ -1,0 +1,181 @@
+// ПЕРЕМЕННЫЕ
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$danger-color: #e74c3c;
+$text-color: #333;
+$light-bg: #f8f9fa;
+$border-radius: 8px;
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$spacing-unit: 16px;
+
+// МИКСИНЫ
+@mixin button-styles($bg-color, $text-color: white) {
+    background-color: $bg-color;
+    color: $text-color;
+    border: none;
+    border-radius: $border-radius;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background-color: darken($bg-color, 10%);
+        transform: translateY(-2px);
+        box-shadow: $box-shadow;
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+@mixin card-styles($background: white, $border: none) {
+    background: $background;
+    border: $border;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+// Общие стили
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background-color: $light-bg;
+    color: $text-color;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+// Карточка товара
+.product-card {
+    @include card-styles(white);
+    width: 320px;
+    
+    &__image {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        &:hover img {
+            transform: scale(1.1);
+        }
+    }
+    
+    &__badge {
+        position: absolute;
+        top: $spacing-unit;
+        right: $spacing-unit;
+        background-color: $danger-color;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    
+    &__content {
+        padding: $spacing-unit;
+    }
+    
+    &__title {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: darken($text-color, 10%);
+    }
+    
+    &__description {
+        font-size: 14px;
+        color: lighten($text-color, 20%);
+        margin-bottom: $spacing-unit;
+        line-height: 1.5;
+    }
+    
+    &__price {
+        margin-bottom: $spacing-unit;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        &-old {
+            font-size: 14px;
+            color: lighten($text-color, 30%);
+            text-decoration: line-through;
+        }
+        
+        &-current {
+            font-size: 24px;
+            font-weight: bold;
+            color: $primary-color;
+        }
+    }
+    
+    &__button {
+        @include button-styles($primary-color);
+        width: 100%;
+    }
+    
+    // Модификаторы
+    &--sale {
+        border: 2px solid $danger-color;
+        
+        .product-card__price-current {
+            color: $danger-color;
+        }
+        
+        .product-card__button {
+            @include button-styles($danger-color);
+        }
+    }
+    
+    &--new {
+        border: 2px solid $secondary-color;
+        
+        .product-card__badge {
+            background-color: $secondary-color;
+        }
+        
+        .product-card__price-current {
+            color: $secondary-color;
+        }
+        
+        .product-card__button {
+            @include button-styles($secondary-color);
+        }
+    }
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "product-card-sass",
+  "version": "1.0.0",
+  "description": "Карточка товара с использованием SASS",
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css --watch",
+    "build": "sass scss/styles.scss css/styles.css --style compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}

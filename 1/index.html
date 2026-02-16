@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Карточка товара со скидкой -->
+        <div class="product-card product-card--sale">
+            <div class="product-card__image">
+                <img src="images/phone.jpg" alt="Смартфон XYZ Pro">
+                <span class="product-card__badge">Акция</span>
+            </div>
+            <div class="product-card__content">
+                <h3 class="product-card__title">Смартфон XYZ Pro</h3>
+                <p class="product-card__description">Смартфон с 6.7" экраном, 128GB памяти и тройной камерой</p>
+                <div class="product-card__price">
+                    <span class="product-card__price-old">29 990 ₽</span>
+                    <span class="product-card__price-current">24 990 ₽</span>
+                </div>
+                <button class="product-card__button">В корзину</button>
+            </div>
+        </div>
+        
+        <!-- Карточка новинки -->
+        <div class="product-card product-card--new">
+            <div class="product-card__image">
+                <img src="images/laptop.jpg" alt="Ноутбук UltraBook">
+                <span class="product-card__badge">Новинка</span>
+            </div>
+            <div class="product-card__content">
+                <h3 class="product-card__title">Ноутбук UltraBook 15</h3>
+                <p class="product-card__description">Тонкий и легкий ноутбук с процессором Intel Core i7</p>
+                <div class="product-card__price">
+                    <span class="product-card__price-current">54 990 ₽</span>
+                </div>
+                <button class="product-card__button">В корзину</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
