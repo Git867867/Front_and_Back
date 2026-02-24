@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ZBo3qk",
+    "name": "Игровой ноутбук ASUS ROG",
+    "category": "Ноутбуки",
+    "description": "Процессор Intel Core i7, RAM 16GB, SSD 512GB, RTX 3060",
+    "price": 89990,
+    "stock": 5,
+    "rating": 4.8,
+    "image": "https://example.com/asus-rog.jpg"
+  },
+  {
+    "id": "QTUqH9",
+    "name": "Смартфон iPhone 15 Pro",
+    "category": "Смартфоны",
+    "description": "6.1 дюйма, A17 Pro, камера 48MP, 256GB",
+    "price": 99990,
+    "stock": 8,
+    "rating": 4.9,
+    "image": "https://example.com/iphone15.jpg"
+  },
+  {
+    "id": "X244T2",
+    "name": "Наушники Sony WH-1000XM5",
+    "category": "Аудио",
+    "description": "Беспроводные наушники с шумоподавлением",
+    "price": 24990,
+    "stock": 15,
+    "rating": 4.7,
+    "image": "https://example.com/sony.jpg"
+  },
+  {
+    "id": "QzTz0R",
+    "name": "Монитор Samsung Odyssey G7",
+    "category": "Мониторы",
+    "description": "27 дюймов, 240Hz, 1ms, QLED",
+    "price": 45990,
+    "stock": 3,
+    "rating": 4.6,
+    "image": "https://example.com/samsung-g7.jpg"
+  },
+  {
+    "id": "ZIWKTN",
+    "name": "Клавиатура Logitech G Pro X",
+    "category": "Периферия",
+    "description": "Механическая, переключатели GX Blue, подсветка RGB",
+    "price": 12990,
+    "stock": 12,
+    "rating": 4.5,
+    "image": "https://example.com/logitech.jpg"
+  },
+  {
+    "id": "Blz1Jx",
+    "name": "Мышь Razer DeathAdder V3",
+    "category": "Периферия",
+    "description": "Оптическая, 30000 DPI, 59g",
+    "price": 8990,
+    "stock": 20,
+    "rating": 4.8,
+    "image": "https://example.com/razer.jpg"
+  },
+  {
+    "id": "CZ9xB1",
+    "name": "Планшет iPad Pro 12.9",
+    "category": "Планшеты",
+    "description": "M2 чип, 128GB, Liquid Retina XDR",
+    "price": 89990,
+    "stock": 4,
+    "rating": 4.9,
+    "image": "https://example.com/ipad.jpg"
+  },
+  {
+    "id": "9SdIPQ",
+    "name": "Умные часы Galaxy Watch 6",
+    "category": "Гаджеты",
+    "description": "47mm, LTE, мониторинг здоровья",
+    "price": 29990,
+    "stock": 7,
+    "rating": 4.4,
+    "image": "https://example.com/watch6.jpg"
+  },
+  {
+    "id": "srPazJ",
+    "name": "Веб-камера Logitech StreamCam",
+    "category": "Периферия",
+    "description": "1080p 60fps, автофокус, USB-C",
+    "price": 12990,
+    "stock": 9,
+    "rating": 4.3,
+    "image": "https://example.com/streamcam.jpg"
+  },
+  {
+    "id": "fGtyBl",
+    "name": "SSD Samsung 980 Pro 1TB",
+    "category": "Комплектующие",
+    "description": "NVMe M.2, чтение 7000MB/s, запись 5000MB/s",
+    "price": 10990,
+    "stock": 25,
+    "rating": 4.9,
+    "image": "https://example.com/ssd.jpg"
+  },
+  {
+    "id": "RxWPg_",
+    "name": "Игровая консоль PlayStation 5",
+    "category": "Консоли",
+    "description": "Цифровая версия, SSD 825GB, контроллер DualSense",
+    "price": 49990,
+    "stock": 2,
+    "rating": 5,
+    "image": "https://example.com/ps5.jpg"
+  }
+]
