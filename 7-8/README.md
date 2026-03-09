@@ -38,22 +38,3 @@ npm run dev
 
 # Запустить в production режиме
 npm start
-
-
-
-## Скриншоты
-
-### Swagger UI
-![Swagger UI](images/swagger-ui.png)
-
-### Регистрация пользователя
-![Регистрация](images/register.png)
-
-### Вход в систему (получение токена)
-![Вход](images/login.png)
-
-### Защищенный маршрут /me
-![Профиль](images/profile.png)
-
-### Создание товара
-![Создание товара](images/create-product.png)
