@@ -2,9 +2,6 @@
 
 Практические работы №9 и №10 по дисциплине "Фронтенд и бэкенд разработка"
 
-## Автор
-[Ваше ФИО]
-
 ## Технологии
 - Бэкенд: Node.js, Express, JWT, bcrypt
 - Фронтенд: React.js, React Router, Axios
@@ -23,4 +20,5 @@
 ```bash
 cd backend
 npm install
+
 npm run dev
