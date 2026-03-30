@@ -1,0 +1,161 @@
+.users-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.users-header h1 {
+  color: #2d3748;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.back-btn {
+  padding: 0.5rem 1rem;
+  background: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.back-btn:hover {
+  background: #3182ce;
+}
+
+.logout-btn {
+  width: auto;
+  padding: 0.5rem 1rem;
+  background: #e53e3e;
+}
+
+.logout-btn:hover {
+  background: #c53030;
+}
+
+.users-table-container {
+  background: white;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.users-table th {
+  background: #f7fafc;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.users-table tr:hover {
+  background: #f7fafc;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.role-user {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.role-seller {
+  background: #fefcbf;
+  color: #975a16;
+}
+
+.role-admin {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.user-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-user-btn,
+.delete-user-btn,
+.save-btn,
+.cancel-btn {
+  padding: 0.25rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.edit-user-btn {
+  background: #4299e1;
+  color: white;
+}
+
+.edit-user-btn:hover {
+  background: #3182ce;
+}
+
+.delete-user-btn {
+  background: #e53e3e;
+  color: white;
+}
+
+.delete-user-btn:hover {
+  background: #c53030;
+}
+
+.save-btn {
+  background: #48bb78;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #38a169;
+}
+
+.cancel-btn {
+  background: #a0aec0;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #718096;
+}
+
+.users-table select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
